@@ -1,6 +1,7 @@
 import CartWidget from "./CartWidget";
 import logo from "./imagenes/logo03.jpeg";
 import { Link, NavLink } from "react-router-dom";
+
 const NavBar = () => {
     return (
 
@@ -16,16 +17,16 @@ const NavBar = () => {
                     <div className="collapse navbar-collapse" id="navbarNav">
                     <ul className="navbar-nav">
                         <li className="nav-item">
-                        <NavLink className="nav-link active" activeClassName = {"active"} aria-current="page" to={"/"}> Inicio </NavLink>
+                        <NavLink className="nav-link" activeclassname = {"active"} aria-current="page" to={"/"}> Inicio </NavLink>
                         </li>
                         <li className="nav-item">
-                        <NavLink className="nav-link" activeClassName = {"active"} to={"/categoria/Tortas"}> Tortas </NavLink>
+                        <NavLink className="nav-link" activeclassname = {"active"} to={"/category/Tortas"}> Tortas </NavLink>
                         </li>
                         <li className="nav-item">
-                        <NavLink className="nav-link" activeClassName = {"active"} to={"/categoria/Cheesecake"}> Cheesecakes </NavLink>
+                        <NavLink className="nav-link" activeclassname = {"active"} to={"/category/Cheesecake"}> Cheesecakes </NavLink>
                         </li>
                         <li className="nav-item">
-                        <NavLink className="nav-link" activeClassName = {"active"} to={"/categoria/Brownie"}> Brownies</NavLink>
+                        <NavLink className="nav-link" activeclassname = {"active"} to={"/category/Brownie"}> Brownies</NavLink>
                         </li>
                     </ul>
                     </div>

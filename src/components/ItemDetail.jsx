@@ -15,7 +15,6 @@ const ItemDetail = ({item}) => {
                         <p><b>${item.precio}</b></p>
                         <ItemCount stock={item.stock} />  
                     </div>
-                   
                 </div>
             </div>
         </div>

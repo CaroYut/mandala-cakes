@@ -1,12 +1,11 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import ItemCount from "./ItemCount";
 import ItemList from "./ItemList";
 import arrayProductos from "./json/productos.json";
 
 const ItemListContainer = () => {
 const [items,setItems] = useState ([]);
-const {id} = useParams;
+const {id} = useParams();
 
 useEffect (() => {
      const promesa = new Promise ((resolve) => {
@@ -23,7 +22,6 @@ useEffect (() => {
 return    (
 <div className="container"> 
       <ItemList items= {items} />       
-      <ItemCount stock={10} />
 </div>
 )
 

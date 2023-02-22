@@ -1,12 +1,12 @@
+import {  BrowserRouter, Routes, Route} from "react-router-dom";
 import ItemDetailContainer from "./components/ItemDetailConteiner";
 import ItemListContainer from "./components/ItemListContainer";
 import NavBar from "./components/NavBar";
-import {  BrowserRouter, Routes, Route} from "react-router-dom";
 import Error404 from "./components/Error404";
 
 function App() {
   return (
-    <div>
+
       <BrowserRouter>
         <div>
           <NavBar/>
@@ -18,8 +18,8 @@ function App() {
             </Routes>    
         </div>
       </BrowserRouter>
-    </div>
-  )
+    
+  );
 }
 
 export default App;
