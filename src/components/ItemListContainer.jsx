@@ -11,10 +11,12 @@ useEffect (() => {
      const promesa = new Promise ((resolve) => {
         setTimeout (() => {
           resolve( id ? arrayProductos.filter (item => item.categoria === id) : arrayProductos);
-        },2000);
+        }, 2000);
       });
      promesa.then((respuesta) => {
-      setItems (respuesta);});
+      setItems (respuesta);
+    
+    });
     
     }, [id]); 
 

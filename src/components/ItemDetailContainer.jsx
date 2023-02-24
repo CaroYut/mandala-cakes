@@ -10,8 +10,8 @@ const ItemDetailContainer = () => {
     useEffect (() => {
         const promesa = new Promise ((resolve) => {
             setTimeout (() => {
-              resolve (arrayProductos.find (prod => prod.index === parseInt(id)));
-            },2000);
+              resolve (arrayProductos.find(prod => prod.index === parseInt(id)));
+            }, 2000);
         });
         promesa.then ((respuesta) => {
             setItem (respuesta);
@@ -25,4 +25,4 @@ const ItemDetailContainer = () => {
     )
 }
 
-export default ItemDetailContainer
+export default ItemDetailContainer;
